@@ -1,0 +1,22 @@
+header {
+    background-color: aquamarine;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    background-color: bisque;
+}
+
+p {
+    color:brown;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+small {
+    color: blue;
+    font-size: 0.7em;
+    text-align: center;
+    font-family: 'Courier New', courier, monospace
+}

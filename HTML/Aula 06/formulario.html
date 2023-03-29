@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Utilizando CSS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lugares Para Viajar</h1>
+        <hr>
+    </header>
+
+    <main>
+        <article>
+            <br>
+            <form method="post " action="mailto:jonatasevangelista21@gmail.com">
+                <label for="nome">Nome:</label>
+                <input type="text" required="required" maxlength="100" id="nome">
+
+                <label for="sNome" maxlength="100">Sobrenome:</label>
+                <input type="text" required="required" maxlength="100" id="sNome">
+
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" size="57" id="email" placeholder="exemploemail@ios.org.br">
+
+                <br><br>
+
+                <input type="radio" name="gen" id="gen1">
+                <label for="gen1">Masculino</label> <br>
+                <input type="radio" name="gen" id="gen2">
+                <label for="gen2">Feminino</label> <br>
+                <input type="radio" name="gen" id="gen3">
+                <label for="gen3">Não quero identificar</label>
+
+                <br><br>
+
+                <!-- Tags de seleção, radio e checkbox -->
+                <!-- Tag radio -->
+                <hr>
+                <h2>Destino da viagem:</h2>
+                <input type="radio" name="reg" id="dn">
+                <label for="dn">Destino Nacional</label>
+                <br>
+                <input type="radio" name="reg" id="di">
+                <label for="di">Destino Internacional</label>
+                <hr>
+
+                <!-- Tag checkbox -->
+                <h2>Locais de viagem:</h2>
+                <input type="checkbox" name="op1" id="op1">
+                <label for="op1">Lençois Maranhenses</label>
+                <br>
+                <input type="checkbox" name="op2" id="op2">
+                <label for="op2">Central Park</label>
+                <br>
+                <input type="checkbox" name="op3" id="op3">
+                <label for="op3">Las Vegas Strip</label>
+                <br>
+                <input type="checkbox" name="op4" id="op4">
+                <label for="op4">Cataratas do Niágara</label>
+                <br>
+                <input type="checkbox" name="op5" id="op5">
+                <label for="op5">The Empire State Building</label>
+                <br>
+                <input type="checkbox" name="op6" id="op6">
+                <label for="op6">Golden Gate</label>
+                <br><br>
+
+                <!-- Utilizando elementos select -->
+                <label for="fPagamento">Seleciona a forma de pagamento:</label>
+                <select name="fPagamento" id="fPagamento">
+
+                    <!-- disabled(desabilitado) selected(sempre selecionado)-->
+                    <option value="fp0" disabled selected>Selecione uma Opção</option>
+                    <!-- Pode-se usar também o hidden -->
+                    <option value="fp1">Cartão de Crédito</option>
+                    <option value="fp2">Cartão de Débito</option>
+                    <option value="fp3">Pix</option>
+                    <option value="fp4">Boleto</option>
+                    <option value="fp5">Cheque</option>
+                </select>
+
+                <br><br>
+
+                <!-- Datalist -->
+                <label for="cid">Cidades:</label>
+                <input autocomplete="on" name="cid" id="cid" list="cidade">
+                <datalist id="cidade">
+                    <option value="São Paulo"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Distrito Federal"></option>
+                    <option value="Brasília"></option>
+                    <option value="Bahia"></option>
+                </datalist>
+                <br>
+
+                <!-- Elemento range -->
+                <p>
+                    0
+                    <input type="range" name="vlr1" id="vlr1">
+                    10
+                </p>
+
+
+                <!-- Elemento Textarea -->
+                <p>Deixe sua sugestão:</p>
+                <textarea name="comentario" id="coment1" cols="30" rows="10"
+                    placeholder="Deixe seu comentário aqui."></textarea>
+
+                <!-- Botão enviar -->
+                <br><br><br>
+                <input type="submit" value="Enviar"> <!-- O input da uma ordem para algum lugar-->
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>
